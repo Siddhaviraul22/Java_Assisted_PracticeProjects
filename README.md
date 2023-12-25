@@ -1,1 +1,1 @@
-# Java_Assisted_PracticeProjects
+<p>Repository for Java assited practice projects.</p>
