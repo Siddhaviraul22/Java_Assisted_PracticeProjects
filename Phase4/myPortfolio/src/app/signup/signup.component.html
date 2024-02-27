@@ -1,0 +1,16 @@
+<div class="account-create-container">
+    <h2>Create an Account</h2>
+    <form class="account-create-form" [formGroup]="loginRef" (ngSubmit)="createAccount()">
+        <label class="account-create-label">Email ID:</label>
+        <input class="account-create-input" type="email" formControlName="email" /><br />
+        <label class="account-create-label">Password:</label>
+        <input class="account-create-input" type="password" formControlName="pass" /><br />
+        <input class="account-create-button" type="submit" value="Submit" />
+        <input class="account-create-button" type="reset" value="Reset" />
+    </form>
+    <br />
+    <span class="account-create-error-message">{{msg}}</span>
+    <br />
+    <span class="account-create-login-message">Already have an account? Then please <a class="account-create-login-link"
+            routerLink="signIn">Log In</a>.</span>
+</div>

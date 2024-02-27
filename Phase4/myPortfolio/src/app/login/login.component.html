@@ -1,0 +1,16 @@
+<div class="login-container">
+    <h2>Login Page</h2>
+    <form class="login-form" [formGroup]="loginRef" (ngSubmit)="checkUser()">
+        <label class="login-label">Email ID:</label>
+        <input class="login-input" type="email" formControlName="email" /><br />
+        <label class="login-label">Password:</label>
+        <input class="login-input" type="password" formControlName="pass" /><br />
+        <br />
+        <input class="login-button" type="submit" value="Submit" />
+        <input class="login-button" type="reset" value="Reset" />
+    </form>
+    <br />
+    <span class="login-error-message">{{msg}}</span>
+    <br />
+    <a class="login-signup-link" routerLink="signUp">Sign Up!</a>
+</div>
